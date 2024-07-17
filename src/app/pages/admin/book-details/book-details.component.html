@@ -1,0 +1,10 @@
+<div class="card">
+    <h2 id="nombre">{{book.nombre }}</h2>
+    <p><strong>Autor:</strong> <span id="autor">{{book.autor }}</span></p>
+    <p><strong>Fecha de Publicación:</strong> <span id="salida">{{book.salida }}</span></p>
+</div>
+<button routerLink="/admin/bookpages">Atras</button>
+<button routerLink="/admin/loanadd/{{book.id}}">Prestar Libro</button>
+<button routerLink="/admin/editbook/{{book.id}}">Editar Libro</button>
+<button (click)="delete()">Eliminar Libro</button>
+

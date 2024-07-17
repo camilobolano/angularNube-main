@@ -1,0 +1,23 @@
+<div class="formulario">
+    <form [formGroup]="registerForm" (ngSubmit)="handleregister()" method="POST">
+      <h2>Registrarse</h2>
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required formControlName="username">
+      </div>
+      <div class="form-group">
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required formControlName="email">
+      </div>
+      <div class="form-group">
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required formControlName="password">
+      </div>
+      <div class="form-group">
+        <label for="confirm-password">Confirmar Contraseña:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required formControlName="confirmPassword">
+      </div>
+      <button type="submit">Registrarse</button>
+    </form>
+  </div>
+  

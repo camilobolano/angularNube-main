@@ -1,0 +1,83 @@
+/* Estilos globales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Estilos del formulario */
+form {
+  display: flex; /* Usar flexbox para centrar */
+  align-items: center; /* Alinear verticalmente */
+  justify-content: center; /* Centrar horizontalmente */
+  margin-bottom: 20px;
+  width: 50%; /* Establecer un ancho razonable para el formulario */
+  margin: 0 auto; /* Centrar el formulario dentro de su contenedor principal */
+}
+
+form input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+form button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #4CAF50; /* Verde */
+  color: white;
+  transition: background-color 0.3s ease; /* Efecto de desplazamiento suave */
+  margin-right: 15px;
+}
+
+form button:hover {
+  background-color: #3e8e41; /* Verde más oscuro al pasar el cursor */
+}
+
+/* Estilos de la lista de libros */
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Distribuir los libros de manera uniforme */
+  margin-bottom: 20px;
+}
+
+
+/* Estilo para el contenedor de los botones */
+.button-container {
+  display: flex;
+  flex-direction: column; /* Coloca los botones en una columna */
+  align-items: center; /* Centra los botones horizontalmente */
+  gap: 20px; /* Espacio entre los botones */
+  margin: 20px; /* Margen alrededor del contenedor */
+}
+
+/* Estilo para los botones */
+button {
+  background-color: #007bff; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  border: none; /* Quita el borde por defecto */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px 20px; /* Espaciado interno del botón */
+  font-size: 16px; /* Tamaño de fuente */
+  cursor: pointer; /* Cursor de mano para indicar clic */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Efectos de transición */
+  margin-right: 15px;
+}
+
+/* Estilo para el hover del botón */
+button:hover {
+  background-color: #0056b3; /* Color de fondo al pasar el cursor */
+  transform: scale(1.05); /* Efecto de aumento al pasar el cursor */
+}
+
+/* Estilo para el foco del botón (cuando es seleccionado) */
+button:focus {
+  outline: none; /* Quita el borde de enfoque por defecto */
+  box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5); /* Añade un sombreado para el enfoque */
+}
+

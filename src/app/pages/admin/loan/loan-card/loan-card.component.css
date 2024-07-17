@@ -1,0 +1,75 @@
+/* Estilos para el contenedor de las tarjetas */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en múltiples líneas si no caben en una sola */
+    justify-content: center; /* Centra las tarjetas horizontalmente dentro del contenedor */
+    gap: 20px; /* Espacio entre las tarjetas */
+    padding: 20px; /* Espaciado interno del contenedor */
+    align-items: flex-start; /* Alinea las tarjetas en la parte superior del contenedor */
+    /* Puedes usar align-items: center; si quieres que las tarjetas se centren verticalmente en el contenedor */
+}
+
+/* Estilos para el enlace */
+.card-link {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: inherit; /* Hereda el color del texto del contenedor */
+}
+
+/* Estilos para la tarjeta */
+.card {
+    background-color: #fff; /* Fondo blanco para la tarjeta */
+    border: 1px solid #3086c3; /* Borde azul claro */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: box-shadow 0.3s, transform 0.3s; /* Transición para efectos de hover */
+    max-width: 300px; /* Ancho máximo de la tarjeta */
+    margin: 10px; /* Margen alrededor de la tarjeta */
+    text-align: left; /* Alineación del texto */
+}
+
+/* Efectos al pasar el mouse sobre la tarjeta */
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
+    transform: translateY(-5px); /* Eleva la tarjeta ligeramente */
+}
+
+/* Estilos para el título de la tarjeta */
+.card-title {
+    font-size: 1.25rem; /* Tamaño de fuente */
+    margin: 0 0 10px; /* Margen inferior */
+    color: #333; /* Color del texto */
+}
+
+/* Estilos para la información del libro */
+.card p {
+    margin: 5px 0; /* Espaciado entre párrafos */
+    font-size: 0.95rem; /* Tamaño de fuente de los párrafos */
+}
+
+.card p strong {
+    color: #333; /* Color para el texto en negrita */
+}
+
+/* Estilos específicos para los elementos dentro de los párrafos */
+.card-author {
+    font-weight: bold; /* Peso de fuente negrita para el autor */
+    color: #333; /* Color del texto del autor */
+}
+
+.card-date {
+    font-style: italic; /* Estilo de fuente cursiva para la fecha */
+    color: #777; /* Color gris más claro para la fecha */
+}
+
+/* Estilo adicional para el nombre del libro */
+#nombre {
+    font-size: 1.5rem; /* Tamaño de fuente mayor para el nombre del libro */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+/* Estilo adicional para los otros detalles */
+#autor, #salida, #estado {
+    font-size: 1rem; /* Tamaño de fuente para los detalles */
+    color: #555; /* Color gris para los detalles */
+}

@@ -1,0 +1,6 @@
+<button routerLink="/admin/bookpages">Pagina de libros</button>
+<button routerLink="/admin/loanpages">Prestamos</button>
+
+@for (element of loan; track element.id) {
+    <app-loan-card [loan]="element" ></app-loan-card>
+}

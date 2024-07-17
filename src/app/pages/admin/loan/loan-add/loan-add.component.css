@@ -1,0 +1,48 @@
+/* Estilo general del formulario */
+.formulario {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif; /* Aplica la fuente Arial */
+}
+
+/* Estilo para las etiquetas */
+.formulario label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilo para los campos de entrada */
+.formulario input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px; /* Espacio entre campos */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    font-family: 'Arial', sans-serif; /* Aplica la fuente Arial a los campos de entrada */
+}
+
+/* Estilo específico para el botón de envío */
+.formulario input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif; /* Aplica la fuente Arial al botón */
+    transition: background-color 0.3s ease;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #45a049;
+}

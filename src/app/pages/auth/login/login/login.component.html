@@ -1,0 +1,18 @@
+<div class="formulario">
+    <form [formGroup]="loginForm" action="#" method="POST">
+      <h2>Iniciar Sesión</h2>
+      <div class="form-group">
+        <label for="nombre">Usuario:</label>
+        <input type="text" id="nombre" name="nombre" required formControlName="username">
+      </div>
+      <div class="form-group">
+        <label for="correo">Contraseña:</label>
+        <input type="password" id="correo" name="correo" required formControlName="password">
+      </div>
+      <button (click)="handlelogin()">Ingresar</button>
+      <p class="register-link">
+        <a routerLink="/auth/register">¿No tienes una cuenta?  Regístrate aquí</a>
+      </p>
+    </form>
+  </div>
+  

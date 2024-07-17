@@ -1,0 +1,13 @@
+<form (ngSubmit)="bookedit()" [formGroup]="bookForm" method="post" class="formulario">
+    <label for="nombre">Nombre :</label><br>
+    <input type="text" id="nombre" name="nombre" required formControlName="name"><br><br>
+
+    <label for="autor">Autor :</label><br>
+    <input type="text" id="autor" name="autor" required formControlName="author"><br><br>
+
+    <label for="salida">Publicación :</label><br>
+    <input type="text" id="salida" name="salida" required formControlName="public"><br><br>
+
+    <input type="submit" value="Editar Libro">
+</form>
+
